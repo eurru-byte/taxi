@@ -4,9 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Грузовое такси Сергиев Посад — Вячеслав</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://w3.org viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚚</text></svg>">
+    <link rel="stylesheet" href="https://cloudflare.com">
+    <style>
+        :root { --bg: #1e2229; --card: #282e38; --yellow: #ffc107; --text: #f8f9fa; --gray: #a6b0cf; }
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Arial, sans-serif; }
+        body { background-color: var(--bg); color: var(--text); line-height: 1.6; }
+        .container { width: 100%; max-width: 1200px; margin: 0 auto; padding: 40px 20px; }
+        h2 { text-align: center; font-size: 2rem; margin: 30px 0; color: var(--yellow); text-transform: uppercase; }
+        .btn-box { display: flex; gap: 15px; flex-wrap: wrap; justify-content: center; margin-top: 20px; }
+        .btn { display: inline-flex; align-items: center; gap: 10px; padding: 12px 28px; font-weight: bold; text-decoration: none; color: #111; border-radius: 50px; border: none; cursor: pointer; }
+        .btn-y { background-color: var(--yellow); }
+        .hero { background-color: #222; padding: 100px 20px; text-align: center; border-bottom: 4px solid var(--yellow); }
+        .hero h1 { font-size: 2.8rem; margin-bottom: 15px; } .hero span { color: var(--yellow); }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; }
+        .card { background-color: var(--card); padding: 30px 20px; border-radius: 12px; }
+        footer { text-align: center; padding: 40px 20px; background-color: #111; color: var(--gray); border-top: 2px solid #222; }
+        footer a { color: var(--yellow); text-decoration: none; font-weight: bold; }
+    </style>
 </head>
 <body>
-    <h1>Грузовой сайт для Сергиева Посада</h1>
-    <p>Скопируйте полноценный код HTML-страницы для вашего проекта грузового такси.</p>
+    <header class="hero">
+        <div class="container">
+            <h1>Грузовое такси в <span>Сергиевом Посаде</span></h1>
+            <p>Частные перевозки без посредников. Быстрая подача автомобиля!</p>
+            <div class="btn-box">
+                <a href="tel:+79801484016" class="btn btn-y"><i class="fa-solid fa-phone"></i> Позвонить Вячеславу</a>
+            </div>
+        </div>
+    </header>
+    <footer>
+        <div class="container">
+            <p>© Частный перевозчик Вячеслав, г. Сергиев Посад.</p>
+            <p style="margin-top: 10px;">Заказ авто напрямую: <a href="tel:+79801484016">8 (980) 148-40-16</a></p>
+        </div>
+    </footer>
 </body>
 </html>
