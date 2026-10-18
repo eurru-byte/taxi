@@ -1,125 +1,663 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Грузовое такси Сергиев Посад — Вячеслав</title>
-    
-    <!-- ПОДТВЕРЖДЕНИЕ GOOGLE SEARCH CONSOLE -->
-    <meta name="google-site-verification" content="rDrroMne6dPZRsB3RN_MDkpTMEaP0bfSGaaCssLvZWQ" /> 
-    
-    <!-- ПОИСКОВАЯ ОПТИМИЗАЦИЯ (SEO) ДЛЯ ЯНДЕКСА И GOOGLE -->
-    <meta name="description" content="Услуги частного грузового такси и малогабаритных перевозок в Сергиевом Посаде на Peugeot Partner. Без посредников, быстрая подача от 1 часа. Звоните!">
-    <meta name="keywords" content="грузоперевозки сергиев посад, грузовое такси сергиев посад, перевозка мебели сергиев посад, квартирный переезд частник, пежо партнер грузовое такси">
-    <meta name="robots" content="index, follow">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Грузовое такси в Сергиевом Посаде — Вячеслав</title>
+  <meta name="description" content="Грузовое такси в Сергиевом Посаде без посредников. Перевозка мебели, доставка покупок и помощь с переездом. Позвоните Вячеславу: +7 980 148-40-16.">
+  <meta name="theme-color" content="#171a20">
+  <style>
+    :root {
+      --bg: #171a20;
+      --panel: #222731;
+      --panel2: #292f3b;
+      --yellow: #ffc928;
+      --text: #f7f8fa;
+      --muted: #b8c0cf;
+      --line: #3a414e;
+    }
 
-    <!-- Иконка грузовичка на вкладке -->
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://w3.org viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚚</text></svg>">
-    
-    <!-- Подключение шрифтовых иконок -->
-    <link rel="stylesheet" href="https://cloudflare.com">
-    
-    <style>
-        :root { --bg: #1e2229; --card: #282e38; --yellow: #ffc107; --text: #f8f9fa; --gray: #a6b0cf; }
-        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Arial, sans-serif; }
-        body { background-color: var(--bg); color: var(--text); line-height: 1.6; }
-        .container { width: 100%; max-width: 1200px; margin: 0 auto; padding: 40px 20px; }
-        h2 { text-align: center; font-size: 2rem; margin: 30px 0; color: var(--yellow); text-transform: uppercase; }
-        h2::after { content: ''; display: block; width: 60px; height: 4px; background: var(--yellow); margin: 10px auto 0; border-radius: 2px; }
-        .btn-box { display: flex; gap: 15px; flex-wrap: wrap; justify-content: center; margin-top: 20px; }
-        .btn { display: inline-flex; align-items: center; gap: 10px; padding: 12px 28px; font-weight: bold; text-decoration: none; color: #111; border-radius: 50px; box-shadow: 0 4px 15px rgba(0,0,0,0.3); border: none; cursor: pointer; }
-        .btn-y { background-color: var(--yellow); }
-        .hero { background: linear-gradient(rgba(30,34,41,0.6), rgba(30,34,41,0.95)), url('car.jpg') no-repeat center center/cover; background-color: #222; padding: 100px 20px; text-align: center; border-bottom: 4px solid var(--yellow); }
-        .hero h1 { font-size: 2.8rem; margin-bottom: 15px; } .hero span { color: var(--yellow); }
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; }
-        .card { background-color: var(--card); padding: 30px 20px; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.2); }
-        .feature-card { text-align: center; border-bottom: 4px solid transparent; }
-        .feature-card:hover { transform: translateY(-3px); border-bottom-color: var(--yellow); transition: 0.3s; }
-        .feature-card i { font-size: 2.5rem; color: var(--yellow); margin-bottom: 15px; }
-        .about-car { background-color: #16191f; padding: 30px 0; }
-        .flex { display: flex; flex-wrap: wrap; gap: 40px; align-items: center; }
-        .car-img { flex: 1; min-width: 300px; border-radius: 15px; overflow: hidden; border: 3px solid #363e4a; }
-        .car-img img { width: 100%; display: block; }
-        .car-details { flex: 1; min-width: 300px; }
-        .car-details ul { list-style: none; margin-top: 15px; }
-        .car-details ul li { padding: 10px 0; border-bottom: 1px solid #282e38; display: flex; align-items: center; gap: 10px; }
-        .car-details i { color: var(--yellow); }
-        .price { display: inline-block; background: rgba(255,193,7,0.15); color: var(--yellow); padding: 6px 12px; border-radius: 6px; font-weight: bold; margin-top: 10px; }
-        .review-item { border-bottom: 1px solid #363e4a; padding: 15px 0; } .review-item:last-child { border-bottom: none; }
-        .stars { color: var(--yellow); margin-bottom: 5px; }
-        footer { text-align: center; padding: 40px 20px; background-color: #111; color: var(--gray); border-top: 2px solid #222; }
-        footer a { color: var(--yellow); text-decoration: none; font-weight: bold; }
-        @media (max-width: 768px) { .hero h1 { font-size: 2rem; } .flex { flex-direction: column; } }
-    </style>
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+    }
+
+    a { color: inherit; }
+
+    .wrap {
+      width: min(1120px, calc(100% - 32px));
+      margin: auto;
+    }
+
+    .topbar {
+      border-bottom: 1px solid var(--line);
+      background: #13161b;
+    }
+
+    .topbar .wrap {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 14px;
+      padding: 12px 0;
+      flex-wrap: wrap;
+    }
+
+    .brand {
+      font-weight: 850;
+      letter-spacing: .2px;
+    }
+
+    .brand span,
+    h1 span,
+    h2 span {
+      color: var(--yellow);
+    }
+
+    .phone {
+      font-weight: 800;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+
+    .hero {
+      padding: 70px 0 58px;
+      background:
+        radial-gradient(ellipse at 85% 10%, #39301b 0, transparent 40%),
+        linear-gradient(135deg, #20252e, #171a20);
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.3fr .7fr;
+      gap: 36px;
+      align-items: center;
+    }
+
+    .eyebrow {
+      color: var(--yellow);
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      font-size: .82rem;
+    }
+
+    h1 {
+      font-size: clamp(2.1rem, 5vw, 3.8rem);
+      line-height: 1.08;
+      letter-spacing: -1.4px;
+      margin: 12px 0 18px;
+    }
+
+    .lead {
+      font-size: 1.12rem;
+      color: var(--muted);
+      max-width: 640px;
+    }
+
+    .actions {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin: 25px 0 18px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 13px 19px;
+      border-radius: 12px;
+      text-decoration: none;
+      font-weight: 850;
+      border: 1px solid transparent;
+      transition: transform .15s, background .15s;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+    }
+
+    .btn-primary {
+      background: var(--yellow);
+      color: #171717;
+    }
+
+    .btn-secondary {
+      border-color: var(--line);
+      background: #252b35;
+    }
+
+    .small {
+      color: var(--muted);
+      font-size: .92rem;
+    }
+
+    .hero-card {
+      background: rgba(34, 39, 49, .9);
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      padding: 24px;
+      box-shadow: 0 18px 45px #0003;
+    }
+
+    .truck {
+      font-size: 4rem;
+      line-height: 1.2;
+    }
+
+    .hero-card h3 {
+      margin: 12px 0 8px;
+      font-size: 1.3rem;
+    }
+
+    .ticks {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .ticks li {
+      padding: 8px 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .ticks li:last-child {
+      border: 0;
+    }
+
+    .ticks li:before {
+      content: "✓";
+      color: var(--yellow);
+      font-weight: 900;
+      margin-right: 10px;
+    }
+
+    section {
+      padding: 62px 0;
+    }
+
+    h2 {
+      text-align: center;
+      font-size: clamp(1.7rem, 3vw, 2.5rem);
+      line-height: 1.2;
+      margin: 0 0 14px;
+    }
+
+    .section-lead {
+      text-align: center;
+      color: var(--muted);
+      max-width: 720px;
+      margin: 0 auto 30px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+
+    .card {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 22px;
+    }
+
+    .icon {
+      font-size: 1.8rem;
+    }
+
+    .card h3 {
+      margin: 8px 0;
+    }
+
+    .card p {
+      color: var(--muted);
+      margin: 0;
+    }
+
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      counter-reset: step;
+    }
+
+    .step {
+      padding: 20px;
+      border-radius: 14px;
+      background: var(--panel);
+      border: 1px solid var(--line);
+    }
+
+    .step:before {
+      counter-increment: step;
+      content: counter(step);
+      display: grid;
+      place-items: center;
+      width: 34px;
+      height: 34px;
+      background: var(--yellow);
+      color: #111;
+      border-radius: 50%;
+      font-weight: 900;
+      margin-bottom: 10px;
+    }
+
+    .contact {
+      background: linear-gradient(135deg, #29251b, #1c2027);
+    }
+
+    .contact-inner {
+      max-width: 800px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .contact-inner .actions {
+      justify-content: center;
+    }
+
+    .photo-frame {
+      overflow: hidden;
+      border-radius: 14px;
+      background: #171b22;
+      border: 1px solid var(--line);
+      margin-bottom: 16px;
+      aspect-ratio: 16 / 10;
+    }
+
+    .photo-frame img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .hero-photo {
+      margin-top: 24px;
+      max-width: 720px;
+    }
+
+    .gallery-card {
+      overflow: hidden;
+    }
+
+    .gallery-card .photo-frame {
+      margin: -1px -1px 18px;
+      aspect-ratio: 4 / 3;
+      border-radius: 12px 12px 0 0;
+    }
+
+    .gallery-card h3,
+    .gallery-card p {
+      margin-left: 2px;
+      margin-right: 2px;
+    }
+
+    footer {
+      padding: 26px 0;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: .9rem;
+    }
+
+    footer .wrap {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .sticky-call {
+      display: none;
+    }
+
+    @media (max-width: 800px) {
+      .hero-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .hero {
+        padding: 50px 0;
+      }
+
+      .hero-card {
+        max-width: 540px;
+      }
+    }
+
+    @media (max-width: 540px) {
+      .grid,
+      .steps {
+        grid-template-columns: 1fr;
+      }
+
+      .topbar .wrap {
+        align-items: flex-start;
+      }
+
+      .phone {
+        font-size: .95rem;
+      }
+
+      .actions .btn {
+        flex: 1 1 100%;
+      }
+
+      section {
+        padding: 46px 0;
+      }
+
+      .sticky-call {
+        display: block;
+        position: fixed;
+        z-index: 5;
+        bottom: 12px;
+        left: 12px;
+        right: 12px;
+        box-shadow: 0 8px 24px #0008;
+      }
+
+      .sticky-call .btn {
+        width: 100%;
+      }
+
+      body {
+        padding-bottom: 70px;
+      }
+    }
+  </style>
 </head>
+
 <body>
+  <header class="topbar">
+    <div class="wrap">
+      <div class="brand">🚚 ГРУЗОВОЕ <span>ТАКСИ</span></div>
+      <a class="phone" href="tel:+79801484016">☎ 8 (980) 148-40-16</a>
+    </div>
+  </header>
 
-    <header class="hero">
-        <div class="container">
-            <h1>Грузовое такси в <span>Сергиевом Посаде</span></h1>
-            <p>Частные перевозки без посредников. Быстрая подача автомобиля от 1 часа по городу, области и всей России!</p>
-            <div class="btn-box">
-                <a href="tel:+79801484016" class="btn btn-y"><i class="fa-solid fa-phone"></i> Позвонить Вячеславу</a>
-            </div>
+  <main>
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div>
+          <div class="eyebrow">Сергиев Посад и рядом</div>
+
+          <h1>Перевезём ваш груз <span>без лишних хлопот</span></h1>
+
+          <p class="lead">
+            Доставка мебели и покупок, перевозка вещей и помощь с переездом.
+            Напрямую, без посредников — обсудим задачу и стоимость до поездки.
+          </p>
+
+          <div class="actions">
+            <a class="btn btn-primary" href="tel:+79801484016">
+              ☎ Позвонить Вячеславу
+            </a>
+
+            <a class="btn btn-secondary"
+               href="https://wa.me/79801484016"
+               target="_blank"
+               rel="noopener">
+              Написать в WhatsApp ↗
+            </a>
+          </div>
+
+          <p class="small">Быстро уточним детали, адреса и удобное время.</p>
+
+          <div class="photo-frame hero-photo">
+            <img src="car.jpg"
+                 alt="Peugeot Partner — грузовое такси в Сергиевом Посаде"
+                 fetchpriority="high">
+          </div>
         </div>
-    </header>
 
-    <section class="container">
-        <h2>Почему выбирают меня</h2>
+        <aside class="hero-card">
+          <div class="truck" aria-hidden="true">🚚</div>
+          <h3>Просто заказать</h3>
+
+          <ul class="ticks">
+            <li>Общение напрямую с перевозчиком</li>
+            <li>Стоимость согласуем заранее</li>
+            <li>Можно уточнить дополнительные услуги</li>
+            <li>Заказы по Сергиеву Посаду и окрестностям</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <section id="services">
+      <div class="wrap">
+        <h2>Чем могу <span>помочь</span></h2>
+
+        <p class="section-lead">
+          Опишите, что нужно перевезти, — подберём удобный вариант.
+        </p>
+
         <div class="grid">
-            <div class="card feature-card"><i class="fa-solid fa-truck-fast"></i><h3>Подача за 1 час</h3><p>Приезжаю быстро и вовремя. Работаю круглосуточно, принимаю ночные заказы.</p></div>
-            <div class="card feature-card"><i class="fa-solid fa-calculator"></i><h3>Фиксированная цена</h3><p>Стоимость рассчитывается до выезда и не меняется на месте. Без наценок.</p></div>
-            <div class="card feature-card"><i class="fa-solid fa-arrows-to-eye"></i><h3>Проеду везде</h3><p>Высота авто всего 1.9 м — легко заеду в подземный паркинг и самый узкий двор.</p></div>
+          <article class="card">
+            <div class="icon">🛋️</div>
+            <h3>Мебель и техника</h3>
+            <p>Доставка диванов, шкафов, холодильников и других крупных покупок.</p>
+          </article>
+
+          <article class="card">
+            <div class="icon">🏠</div>
+            <h3>Переезды</h3>
+            <p>Перевозка личных вещей при квартирном, дачном или небольшом офисном переезде.</p>
+          </article>
+
+          <article class="card">
+            <div class="icon">🛒</div>
+            <h3>Доставка покупок</h3>
+            <p>Забрать товар из магазина или у продавца и доставить по адресу.</p>
+          </article>
+
+          <article class="card">
+            <div class="icon">📦</div>
+            <h3>Коробки и вещи</h3>
+            <p>Перевозка коробок, сумок, строительных и бытовых принадлежностей.</p>
+          </article>
+
+          <article class="card">
+            <div class="icon">💪</div>
+            <h3>Помощь с погрузкой</h3>
+            <p>Возможность обсудить помощь с погрузкой и разгрузкой заранее.</p>
+          </article>
+
+          <article class="card">
+            <div class="icon">📍</div>
+            <h3>По городу и району</h3>
+            <p>Маршрут и возможность поездки в соседний населённый пункт согласуем при заказе.</p>
+          </article>
         </div>
+      </div>
     </section>
 
-    <section class="about-car">
-        <div class="container flex">
-            <div class="car-img"><img src="car.jpg" alt="Мой Peugeot Partner"></div>
-            <div class="car-details">
-                <h2>Ваш надежный Peugeot Partner</h2>
-                <p>Чистый и маневренный автомобиль с жестким закрытым кузовом и задней погрузкой.</p>
-                <ul>
-                    <li><i class="fa-solid fa-weight-hanging"></i> <strong>Грузоподъемность:</strong> до 500 кг</li>
-                    <li><i class="fa-solid fa-box-open"></i> <strong>Объем кузова:</strong> 3 кубических метра</li>
-                    <li><i class="fa-solid fa-arrows-up-down-left-right"></i> <strong>Габариты кузова:</strong> 1.70м х 1.20м х 1.10м</li>
-                    <li><i class="fa-solid fa-layer-group"></i> Есть багажник на крыше для негабарита</li>
-                </ul>
-            </div>
-        </div>
-    </section>
+    <section id="vehicle">
+      <div class="wrap">
+        <h2>Наш <span>автомобиль</span></h2>
 
-    <section class="container">
-        <h2>Что перевожу и стоимость</h2>
+        <p class="section-lead">
+          Peugeot Partner — компактный автомобиль для городских перевозок и доставки покупок.
+        </p>
+
+        <div class="photo-frame">
+          <img src="box.jpg"
+               alt="Пустой грузовой отсек Peugeot Partner"
+               loading="lazy">
+        </div>
+
         <div class="grid">
-            <div class="card"><h3>📦 Переезды и мебель</h3><p>Квартирные, дачные и офисные переезды. Бережная доставка диванов, бытовой техники и вещей.</p><span class="price">от 1500 ₽ / час</span></div>
-            <div class="card"><h3>🏬 Маркетплейсы и Бизнес</h3><p>Доставка коммерческих грузов на склады Ozon, Wildberries, Яндекс Маркет, СДЭК и ПЭК.</p><span class="price">Мин. заказ от 1000 ₽</span></div>
-            <div class="card"><h3>👑 Межгород по РФ</h3><p>Прямая доставка малогабаритных грузов отдельной машиной по Московской области и городам России.</p><span class="price">70 ₽ / км</span></div>
+          <article class="card">
+            <div class="icon">🚐</div>
+            <h3>Peugeot Partner</h3>
+            <p>Компактный формат помогает заезжать в паркинги, куда крупный грузовой транспорт может не пройти.</p>
+          </article>
+
+          <article class="card">
+            <div class="icon">📏</div>
+            <h3>Размеры кузова</h3>
+            <p>Длина — 1,7 м; ширина — 1,2 м; высота — 1,2 м. Для высоких или нестандартных грузов возможность перевозки уточним заранее.</p>
+          </article>
+
+          <article class="card">
+            <div class="icon">🧳</div>
+            <h3>Багажник на крыше</h3>
+            <p>Есть багажник на крыше для некоторых негабаритных вещей. Возможность перевозки конкретного предмета согласуем заранее.</p>
+          </article>
         </div>
+
+        <div class="actions" style="justify-content:center;margin-top:26px">
+          <a class="btn btn-primary" href="tel:+79801484016">
+            ☎ Уточнить возможность перевозки
+          </a>
+        </div>
+      </div>
     </section>
 
-    <section class="container">
-        <div class="card" style="max-width: 800px; margin: 0 auto;">
-            <h2>Отзывы клиентов (Авито 5.0)</h2>
-            <div class="review-item">
-                <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
-                <p>«Все супер, пунктуальный, ответственный. Мебель довез в целости, помог закрепить. Буду обращаться еще!»</p>
-                <small style="color:var(--yellow); display:block; margin-top:5px;">— Алёна Журавлёва</small>
-            </div>
-            <div class="review-item">
-                <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
-                <p>«Услуга по перевозке оказана качественно и надёжно. Стоимость как обсудили по телефону, без накруток.»</p>
-                <small style="color:var(--yellow); display:block; margin-top:5px;">— Сергей Малахов</small>
-            </div>
-        </div>
+    <section id="gallery">
+      <div class="wrap">
+        <h2>Примеры <span>перевозок</span></h2>
+
+        <p class="section-lead">
+          Перевозка вещей, коробок и имущества при переезде.
+        </p>
+
+        <article class="card gallery-card">
+          <div class="photo-frame">
+            <img src="pereezd.jpg"
+                 alt="Вещи для перевозки при переезде"
+                 loading="lazy">
+          </div>
+
+          <h3>Перевозка вещей и переезды</h3>
+          <p>Поможем доставить коробки, сумки и другие вещи. Позвоните, чтобы обсудить детали и стоимость.</p>
+        </article>
+      </div>
     </section>
 
-    <footer>
-        <div class="container" style="padding: 0;">
-            <p>© Частный перевозчик Вячеслав, г. Сергиев Посад.</p>
-            <p style="margin-top: 10px;">Заказ авто напрямую: <a href="tel:+79801484016">8 (980) 148-40-16</a></p>
-        </div>
-    </footer>
+    <section class="pricing" id="prices">
+      <div class="wrap">
+        <h2>Стоимость <span>обсудим лично</span></h2>
 
+        <p class="section-lead">
+          Каждый заказ индивидуален. Позвоните или напишите Вячеславу —
+          уточним маршрут, что нужно перевезти, удобное время и договоримся о цене заранее.
+        </p>
+
+        <div class="grid">
+          <article class="card">
+            <div class="icon">📍</div>
+            <h3>Маршрут</h3>
+            <p>Сообщите адрес отправления и доставки — оценим расстояние и условия поездки.</p>
+          </article>
+
+          <article class="card">
+            <div class="icon">📦</div>
+            <h3>Ваш груз</h3>
+            <p>Расскажите, что и в каком объёме нужно перевезти.</p>
+          </article>
+
+          <article class="card">
+            <div class="icon">🤝</div>
+            <h3>Цена по договорённости</h3>
+            <p>Учитываем детали заказа и согласуем стоимость до поездки. Никаких автоматических расчётов на сайте.</p>
+          </article>
+        </div>
+
+        <div class="actions" style="justify-content:center;margin-top:26px">
+          <a class="btn btn-primary" href="tel:+79801484016">
+            ☎ Позвонить: 8 (980) 148-40-16
+          </a>
+
+          <a class="btn btn-secondary"
+             href="https://wa.me/79801484016"
+             target="_blank"
+             rel="noopener">
+            Написать в WhatsApp ↗
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="how">
+      <div class="wrap">
+        <h2>Как <span>заказать</span></h2>
+
+        <p class="section-lead">Всего три простых шага.</p>
+
+        <div class="steps">
+          <div class="step">
+            <h3>Свяжитесь</h3>
+            <p class="small">Позвоните или напишите в WhatsApp.</p>
+          </div>
+
+          <div class="step">
+            <h3>Уточним детали</h3>
+            <p class="small">Обсудим груз, адреса, время и стоимость.</p>
+          </div>
+
+          <div class="step">
+            <h3>Согласуем заказ</h3>
+            <p class="small">Подтвердим условия и договоримся о перевозке.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="wrap contact-inner">
+        <h2>Нужно перевезти? <span>Давайте обсудим</span></h2>
+
+        <p class="section-lead">
+          Расскажите, что и куда нужно доставить. Вячеслав поможет уточнить детали и стоимость.
+        </p>
+
+        <div class="actions">
+          <a class="btn btn-primary" href="tel:+79801484016">
+            Позвонить: 8 (980) 148-40-16
+          </a>
+
+          <a class="btn btn-secondary"
+             href="https://wa.me/79801484016"
+             target="_blank"
+             rel="noopener">
+            WhatsApp ↗
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="sticky-call">
+    <a class="btn btn-primary" href="tel:+79801484016">
+      ☎ Позвонить Вячеславу
+    </a>
+  </div>
+
+  <footer>
+    <div class="wrap">
+      <span>© <span id="year"></span> Частный перевозчик Вячеслав · Сергиев Посад</span>
+      <a href="tel:+79801484016">8 (980) 148-40-16</a>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
